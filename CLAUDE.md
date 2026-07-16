@@ -24,13 +24,16 @@ photo/people/           headshots referenced directly by path in people.md
 
 - **A page** → new `.md` with `layout: default`, `title:`, `permalink:` front matter,
   then add it to `nav:` in `_config.yml`.
-- **An article** → copy `_posts/2026-07-16-example-article.md` to
-  `_posts/YYYY-MM-DD-slug.md`. It appears on `/articles/` and the landing page on its own.
-  Filename date must match `date:`; future dates don't publish.
-  `/articles/` renders each post as a box: title, then `authors` and `citation` from
-  front matter, then the post body (the abstract) hidden behind a click-to-expand
-  `<details>`. `paper_url` and `repo_url` front matter fields are optional and each add
-  a link on the right of the box; omit `repo_url` when there's no repository.
+- **An article** → copy any existing file in `_posts/` to `_posts/YYYY-MM-DD-slug.md` and
+  replace the front matter and body. Filename date must match `date:`; future dates don't
+  publish. Front matter fields: `title`, `date`, `authors`, `citation` (venue/year string),
+  `paper_url`, `repo_url` (omit entirely when there's no repository) — the post body is the
+  abstract. `/articles/` groups posts by year into click-to-expand `<details>` sections
+  (newest year open by default), each post rendered as a box: title, `authors`, `citation`,
+  then the abstract itself behind a second click-to-expand. `paper_url`/`repo_url` become
+  icon links on the right. The search box on that page filters by `title`/`authors` only
+  (not the abstract) — see the `data-title`/`data-authors` attributes on `.pub` in
+  `articles.md` if that ever needs to change.
 - **A repo** → nothing here. Tag it on GitHub. See below.
 - **A gallery photo** → drop the image file in `photo/`, then add one entry to
   `_data/gallery.yml` (`file:` the exact filename, `event:` the caption/tag). `gallery.md`

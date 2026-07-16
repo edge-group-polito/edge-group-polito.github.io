@@ -82,6 +82,23 @@ ul.articles a { font-weight: 600; text-decoration: none; font-size: 1.05rem; }
 ul.articles p { margin: .25rem 0 0; color: var(--muted); font-size: .9rem; }
 time { color: var(--muted); font-size: .85rem; }
 
+.pub-search { margin-bottom: 2rem; }
+.pub-search input {
+  width: 100%; font: inherit; color: var(--fg); background: var(--card);
+  border: 1px solid var(--line); border-radius: 8px; padding: .6rem .9rem;
+}
+.pub-search input:focus { outline: 2px solid var(--accent); outline-offset: -1px; }
+
+.pub-year { border-bottom: 1px solid var(--line); padding-bottom: 1.5rem; margin-bottom: 1.5rem; }
+.pub-year-summary {
+  cursor: pointer; list-style: none; font-size: 1.4rem; font-weight: 700;
+  letter-spacing: -.01em; margin-bottom: 1rem;
+}
+.pub-year-summary::-webkit-details-marker { display: none; }
+.pub-year-summary::before { content: "▸ "; color: var(--muted); font-size: 1rem; }
+.pub-year[open] > .pub-year-summary::before { content: "▾ "; }
+.pub-count { color: var(--muted); font-weight: 400; font-size: 1rem; }
+
 ul.publications { list-style: none; padding: 0; display: flex; flex-direction: column; gap: 1rem; }
 .pub {
   display: flex; gap: 1.25rem; justify-content: space-between; align-items: flex-start;
