@@ -19,8 +19,17 @@ nav:
     url: /gallery/
   - title: Thesis
     url: /thesis/
+  - title: Posts
+    url: /posts/
   - title: Contact
     url: /contact/
+
+# "Posts" is a second, lighter-weight collection (not `_posts`/site.posts, which is the
+# Articles page) for short social-style updates. No individual pages (output: false) —
+# they only ever render inline in the /posts/ feed.
+collections:
+  updates:
+    output: false
 
 # Tag a repo with this topic on GitHub to keep it off the site entirely.
 # Beats everything below — a repo tagged both `cryptography` and `no-site` stays hidden.

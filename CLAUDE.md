@@ -13,8 +13,9 @@ _layouts/post.html     article wrapper (title, date, byline)
 assets/css/style.css   all styling, no framework
 index.html             landing page
 projects.html          repo list + the fetch/grouping script
-research.md people.md contact.md articles.md gallery.md thesis.md
+research.md people.md contact.md articles.md gallery.md thesis.md posts.md
 _posts/                one Markdown file per article
+_updates/               one Markdown file per social-style post, read by posts.md
 _data/gallery.yml       photo path (incl. event subfolder) -> event/year, read by gallery.md
 _data/theses.yml        completed/ongoing thesis list, read by thesis.md
 _data/thesis_proposals.yml  open thesis topics, read by thesis.md
@@ -54,6 +55,14 @@ photo/people/           headshots referenced directly by path in people.md
   `description`). **A thesis student** → add one entry to `_data/theses.yml` (`student`,
   `title`, `year`, `link` to the thesis PDF/repository page). Both render on `thesis.md`;
   unlike `/articles/`, the thesis list is plain — name, title, link, no abstract box.
+- **A post** → new file in `_updates/YYYY-MM-DD-slug.md` (front matter: `title`, `date`,
+  `link`, `link_label`, optional `photos:` list; body is the post text, English only).
+  `_updates` is a second Jekyll collection (`site.updates`, configured in `_config.yml`
+  with `output: false`) — deliberately separate from `_posts`/`site.posts` so these
+  LinkedIn-style updates never leak into `/articles/` or the homepage's "Latest articles".
+  `posts.md` groups them by year into the same click-to-expand accordion as Articles/
+  Gallery, rendered as social-media-style cards (avatar, date, body, optional photo grid,
+  link button) rather than publication boxes.
 
 ## The project list
 
