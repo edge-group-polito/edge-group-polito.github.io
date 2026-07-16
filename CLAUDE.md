@@ -60,9 +60,21 @@ photo/people/           headshots referenced directly by path in people.md
   `_updates` is a second Jekyll collection (`site.updates`, configured in `_config.yml`
   with `output: false`) — deliberately separate from `_posts`/`site.posts` so these
   LinkedIn-style updates never leak into `/articles/` or the homepage's "Latest articles".
-  `posts.md` groups them by year into the same click-to-expand accordion as Articles/
+  `posts.html` groups them by year into the same click-to-expand accordion as Articles/
   Gallery, rendered as social-media-style cards (avatar, date, body, optional photo grid,
   link button) rather than publication boxes.
+
+**`posts.html` is `.html`, not `.md` — do not rename it back.** kramdown (Jekyll's
+Markdown renderer) treats a raw HTML block (`<div>`, `<ul>`, `<li>`, …) as ending at the
+first blank line, and Liquid control-flow tags (`{% if %}`, `{% for %}`, …) each leave a
+blank line behind once rendered — so a `.md` file mixing loops with nested HTML gets its
+`<div>`/`<li>` wrappers silently dropped, and elements fall back to raw, unstyled,
+natural-size rendering (this is exactly what made the feed briefly render as a giant
+unstyled logo/photos with no card background). `.html` pages skip the Markdown pass
+entirely and aren't affected — same reason `projects.html` is `.html`. `articles.md` and
+`gallery.md` have the same Liquid/HTML-nesting shape and may have the same latent issue;
+if either one ever looks broken (missing card backgrounds, images at native size), convert
+it to `.html` the same way before debugging anything else.
 
 ## The project list
 
