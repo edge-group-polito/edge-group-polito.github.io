@@ -30,7 +30,9 @@ TODO
 
 TODO
 
-<figure class="group-photo">
-  <img src="/assets/img/group-photo.jpg" alt="The EDGE Group in the lab">
-  <figcaption>The EDGE Group</figcaption>
-</figure>
+<div class="photo-strip">
+  <img src="/assets/img/group-photo.jpg" alt="The EDGE Group">
+  <img src="/assets/img/group-lab.jpg" alt="The EDGE Group in the lab">
+  <img src="/assets/img/lab-wirebonding.jpg" alt="Wire bonding in the lab">
+  <img src="/assets/img/polheepo-chip.png" alt="The POLHEEPO chip die">
+</div>

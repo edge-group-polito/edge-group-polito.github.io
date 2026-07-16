@@ -149,9 +149,11 @@ ul.publications { list-style: none; padding: 0; display: flex; flex-direction: c
 .post table { width: 100%; border-collapse: collapse; }
 .post td, .post th { border-bottom: 1px solid var(--line); padding: .5rem; text-align: left; }
 
-.group-photo { margin: 3rem 0 0; }
-.group-photo img { display: block; width: 100%; border-radius: 10px; border: 1px solid var(--line); }
-.group-photo figcaption { margin-top: .5rem; color: var(--muted); font-size: .85rem; text-align: center; }
+.photo-strip { display: flex; flex-wrap: wrap; gap: .75rem; margin: 3rem 0 0; }
+.photo-strip img {
+  width: 150px; height: 150px; object-fit: cover;
+  border-radius: 10px; border: 1px solid var(--line);
+}
 
 footer { border-top: 1px solid var(--line); padding: 1.5rem 1.25rem 3rem;
          color: var(--muted); font-size: .9rem; }
