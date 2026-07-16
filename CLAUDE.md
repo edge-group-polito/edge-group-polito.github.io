@@ -13,8 +13,10 @@ _layouts/post.html     article wrapper (title, date, byline)
 assets/css/style.css   all styling, no framework
 index.html             landing page
 projects.html          repo list + the fetch/grouping script
-research.md people.md contact.md articles.md
+research.md people.md contact.md articles.md gallery.md
 _posts/                one Markdown file per article
+_data/gallery.yml       photo filename -> event, read by gallery.md
+photo/                  the actual gallery photo files, served as static files
 ```
 
 ## Adding things
@@ -24,7 +26,17 @@ _posts/                one Markdown file per article
 - **An article** → copy `_posts/2026-07-16-example-article.md` to
   `_posts/YYYY-MM-DD-slug.md`. It appears on `/articles/` and the landing page on its own.
   Filename date must match `date:`; future dates don't publish.
+  `/articles/` renders each post as a box: title, then `authors` and `citation` from
+  front matter, then the post body (the abstract) hidden behind a click-to-expand
+  `<details>`. `paper_url` and `repo_url` front matter fields are optional and each add
+  a link on the right of the box; omit `repo_url` when there's no repository.
 - **A repo** → nothing here. Tag it on GitHub. See below.
+- **A gallery photo** → drop the image file in `photo/`, then add one entry to
+  `_data/gallery.yml` (`file:` the exact filename, `event:` the caption/tag). `gallery.md`
+  groups photos by `event` automatically — reuse the same `event` string across photos
+  from the same event so they land in one section. This is a Jekyll data file (not a
+  page), because GitHub Pages builds with no custom plugins and no Action, so Liquid
+  needs YAML it can iterate natively — a free-text manifest can't be parsed without one.
 
 ## The project list
 

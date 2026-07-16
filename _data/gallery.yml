@@ -1,0 +1,15 @@
+# One entry per photo. `file` must match a filename in the `photo/` folder exactly.
+# `event` is the caption/tag photos are grouped by on the Gallery page — reuse the
+# same string for every photo from the same event so they land in one section.
+- file: 55340793821_eebb45ee84_o.jpg
+  event: "RISC-V Summit 2026 - Bologna"
+- file: 55342656411_6910a22412_o.jpg
+  event: "RISC-V Summit 2026 - Bologna"
+- file: 55342803338_6d11162533_o.jpg
+  event: "RISC-V Summit 2026 - Bologna"
+- file: 55342847299_6273de3816_o.jpg
+  event: "RISC-V Summit 2026 - Bologna"
+- file: 55342847619_1980966920_o.jpg
+  event: "RISC-V Summit 2026 - Bologna"
+- file: photo_2026-06-25_10-00-20.jpg
+  event: "polheepo"
