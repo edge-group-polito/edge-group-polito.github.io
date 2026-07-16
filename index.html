@@ -1,161 +1,26 @@
-<!doctype html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>EDGE Group — Politecnico di Torino</title>
-<meta name="description" content="EDGE group @ Dipartimento di Elettronica e Telecomunicazioni (DET), Politecnico di Torino.">
-<style>
-  :root {
-    --bg: #ffffff; --fg: #14171a; --muted: #5b6570;
-    --line: #e3e6ea; --accent: #0b5fff; --card: #fafbfc;
-  }
-  @media (prefers-color-scheme: dark) {
-    :root {
-      --bg: #0d1117; --fg: #e6edf3; --muted: #9198a1;
-      --line: #232a33; --accent: #6aa3ff; --card: #131920;
-    }
-  }
-  * { box-sizing: border-box; }
-  body {
-    margin: 0; background: var(--bg); color: var(--fg);
-    font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  }
-  .wrap { max-width: 960px; margin: 0 auto; padding: 0 1.25rem; }
-  a { color: var(--accent); }
+---
+layout: default
+hide_title: true
+---
 
-  header { border-bottom: 1px solid var(--line); padding: 4rem 0 3rem; }
-  header h1 { margin: 0 0 .5rem; font-size: clamp(2rem, 5vw, 3rem); letter-spacing: -.02em; }
-  header p.tagline { margin: 0 0 1.5rem; font-size: 1.15rem; color: var(--muted); max-width: 46ch; }
-  nav a { margin-right: 1.25rem; text-decoration: none; font-weight: 500; }
+<h1>{{ site.title }}</h1>
+<p class="lede">{{ site.tagline }}</p>
 
-  section { padding: 3rem 0; border-bottom: 1px solid var(--line); }
-  h2 { font-size: 1.5rem; margin: 0 0 1rem; letter-spacing: -.01em; }
-  h3 { font-size: 1rem; margin: 2rem 0 .75rem; text-transform: uppercase;
-       letter-spacing: .08em; color: var(--muted); }
+<h2>Latest articles</h2>
+<ul class="articles">
+  {% for post in site.posts limit: 3 %}
+  <li>
+    <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+    <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%-d %B %Y" }}</time>
+    {% if post.excerpt %}<p>{{ post.excerpt | strip_html | truncate: 140 }}</p>{% endif %}
+  </li>
+  {% else %}
+  <li>Nothing published yet.</li>
+  {% endfor %}
+</ul>
+<p><a href="{{ '/articles/' | relative_url }}">All articles →</a></p>
 
-  .grid { display: grid; gap: 1rem; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); }
-  .card {
-    border: 1px solid var(--line); border-radius: 10px; padding: 1rem;
-    background: var(--card); display: flex; flex-direction: column; gap: .4rem;
-  }
-  .card a.name { font-weight: 600; text-decoration: none; }
-  .card p { margin: 0; font-size: .9rem; color: var(--muted); }
-  .meta { font-size: .8rem; color: var(--muted); display: flex; gap: .8rem; margin-top: auto; padding-top: .5rem; }
-
-  ul.people { list-style: none; padding: 0; display: grid; gap: .5rem;
-              grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); }
-  footer { padding: 2rem 0 4rem; color: var(--muted); font-size: .9rem; }
-</style>
-</head>
-<body>
-
-<header>
-  <div class="wrap">
-    <h1>EDGE Group</h1>
-    <p class="tagline">Energy-efficient embedded systems, RISC-V platforms and hardware
-      security at the Dipartimento di Elettronica e Telecomunicazioni, Politecnico di Torino.</p>
-    <nav>
-      <a href="#research">Research</a>
-      <a href="#projects">Projects</a>
-      <a href="#people">People</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </div>
-</header>
-
-<section id="research">
-  <div class="wrap">
-    <h2>Research</h2>
-    <p>TODO: two or three paragraphs on the group's lines of work.</p>
-  </div>
-</section>
-
-<section id="projects">
-  <div class="wrap">
-    <h2>Projects</h2>
-    <p>Open-source work from the <a href="https://github.com/edge-group-polito">EDGE Group organization</a>,
-       grouped by topic.</p>
-    <div id="repos"><p>Loading…</p></div>
-  </div>
-</section>
-
-<section id="people">
-  <div class="wrap">
-    <h2>People</h2>
-    <ul class="people">
-      <li>TODO: name — role</li>
-      <li>TODO: name — role</li>
-    </ul>
-  </div>
-</section>
-
-<section id="contact">
-  <div class="wrap">
-    <h2>Contact</h2>
-    <p>Dipartimento di Elettronica e Telecomunicazioni (DET)<br>
-       Politecnico di Torino — Corso Duca degli Abruzzi 24, 10129 Torino, Italy</p>
-  </div>
-</section>
-
-<footer>
-  <div class="wrap">© EDGE Group, Politecnico di Torino.</div>
-</footer>
-
-<script>
-// Topic -> section title. A repo lands in every matching section.
-// Add a topic on GitHub (repo page > About > gear > Topics) and it shows up here.
-// Repos with no known topic go to "Other". Forks are hidden.
-const TOPICS = {
-  "risc-v":   "RISC-V Platforms & Cores",
-  "hw-security": "Hardware Security & Cryptography",
-  "ml":       "Machine Learning at the Edge",
-  "eda":      "EDA & Design Tools",
-};
-const FALLBACK = "Other";
-
-const el = document.getElementById("repos");
-
-fetch("https://api.github.com/orgs/edge-group-polito/repos?per_page=100&sort=updated")
-  .then(r => r.ok ? r.json() : Promise.reject(r.status))
-  .then(repos => {
-    const groups = new Map(Object.values(TOPICS).map(t => [t, []]));
-    groups.set(FALLBACK, []);
-
-    for (const r of repos) {
-      if (r.fork || r.archived || r.name === ".github") continue;
-      const hits = r.topics.map(t => TOPICS[t]).filter(Boolean);
-      for (const g of (hits.length ? [...new Set(hits)] : [FALLBACK])) groups.get(g).push(r);
-    }
-
-    const html = [...groups]
-      .filter(([, rs]) => rs.length)
-      .map(([title, rs]) => `
-        <h3>${title}</h3>
-        <div class="grid">${rs
-          .sort((a, b) => b.stargazers_count - a.stargazers_count)
-          .map(card).join("")}</div>`)
-      .join("");
-
-    el.innerHTML = html || "<p>No public repositories yet.</p>";
-  })
-  .catch(() => {
-    el.innerHTML = `<p>Could not load repositories.
-      See them on <a href="https://github.com/edge-group-polito">GitHub</a>.</p>`;
-  });
-
-const esc = s => (s ?? "").replace(/[<>&"]/g, c => ({"<":"&lt;",">":"&gt;","&":"&amp;",'"':"&quot;"}[c]));
-
-function card(r) {
-  return `<div class="card">
-    <a class="name" href="${esc(r.html_url)}">${esc(r.name)}</a>
-    <p>${esc(r.description) || "<em>No description</em>"}</p>
-    <div class="meta">
-      ${r.language ? `<span>${esc(r.language)}</span>` : ""}
-      <span>★ ${r.stargazers_count}</span>
-    </div>
-  </div>`;
-}
-</script>
-</body>
-</html>
+<h2>Projects</h2>
+<p>Open-source hardware and tools from the
+   <a href="https://github.com/{{ site.github_org }}">EDGE Group organization</a>.</p>
+<p><a href="{{ '/projects/' | relative_url }}">Browse projects by topic →</a></p>

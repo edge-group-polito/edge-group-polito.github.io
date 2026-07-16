@@ -1,0 +1,84 @@
+# EDGE Group site
+
+GitHub Pages site for the EDGE Group @ DET, Politecnico di Torino.
+Jekyll, built by GitHub Pages itself on every push to `main` — a push is a deploy.
+There is no Action, no `Gemfile`, and no dependency to install for deploying.
+
+## Where things are
+
+```
+_config.yml            site title, tagline, nav, and the topic map (see below)
+_layouts/default.html  header, nav, footer — every page
+_layouts/post.html     article wrapper (title, date, byline)
+assets/css/style.css   all styling, no framework
+index.html             landing page
+projects.html          repo list + the fetch/grouping script
+research.md people.md contact.md articles.md
+_posts/                one Markdown file per article
+```
+
+## Adding things
+
+- **A page** → new `.md` with `layout: default`, `title:`, `permalink:` front matter,
+  then add it to `nav:` in `_config.yml`.
+- **An article** → copy `_posts/2026-07-16-example-article.md` to
+  `_posts/YYYY-MM-DD-slug.md`. It appears on `/articles/` and the landing page on its own.
+  Filename date must match `date:`; future dates don't publish.
+- **A repo** → nothing here. Tag it on GitHub. See below.
+
+## The project list
+
+`projects.html` fetches `api.github.com/orgs/edge-group-polito/repos` client-side on page
+load and groups repos by their **GitHub topics**. The topic-to-section mapping lives in
+`topics:` in `_config.yml` and is injected into the page with `{{ site.topics | jsonify }}`.
+
+- New research area → one `github-topic: Section Title` line in `_config.yml`.
+- New repo → tag it on GitHub (repo page → About → gear → Topics). Nothing to commit here.
+
+Several topics on one repo → it appears in several sections. Untagged repos land in "Other"
+so nothing disappears silently. Forks, archived repos, `.github`, and the site repo itself
+are filtered out.
+
+Two failure modes worth knowing, both already hit once:
+
+- A topic in `_config.yml` that no repo actually uses does nothing, and a topic on a repo
+  that isn't in `_config.yml` silently sends it to "Other". **Check the real topics before
+  editing the map**: `curl -s "https://api.github.com/orgs/edge-group-polito/repos?per_page=100" | jq -r '.[] | select(.topics|length>0) | "\(.name) \(.topics)"'`
+- Most of the org (23 repos as of July 2026) is untagged and sits in "Other". That shrinks
+  as people tag repos; it is not a bug to code around.
+
+Topic keys must be valid GitHub topics: lowercase letters, numbers, hyphens; no slashes, no
+spaces, no uppercase. Punctuation belongs in the section title on the right (`ai-ml: AI/ML`).
+
+Never replace this with a hardcoded list of repos — it goes stale the moment someone adds a
+repo and forgets the site exists.
+
+## Constraints
+
+- **No JS framework, no CSS framework, no npm.** Vanilla, hand-written, inline where small.
+  Jekyll + the browser are the whole toolchain.
+- **No GitHub Action.** Pages builds Jekyll natively; adding CI to do it again is noise.
+- Keep pages readable as plain Markdown. Liquid only where it removes duplication.
+
+## Previewing
+
+Local preview needs Jekyll, which is **not** installed here and won't install cleanly on the
+system Ruby 2.6 (`jekyll not found`, `/usr/bin/ruby` is 2.6.10). Options, in order of laziness:
+
+1. Push to a branch and look at the Pages preview / just push to `main`.
+2. `brew install ruby` then `gem install jekyll bundler` if local preview is worth it.
+
+Liquid templating can't be checked with `python3 -m http.server` — it serves the raw
+`{{ }}`. Don't trust that as a preview.
+
+## If asked to make the repo list faster / SEO-visible
+
+The known upgrade is a nightly GitHub Action writing `repos.json`, with `projects.html`
+fetching that instead of the live API. ~20 lines. Only do it if the client-side fetch causes
+a real problem (rate limits, search indexing) — not preemptively.
+
+## Style
+
+Prose is for researchers and prospective students. Plain, concrete, no marketing voice.
+`TODO:` markers are real gaps waiting on content from the group — ask before inventing text
+for them.

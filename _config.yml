@@ -1,0 +1,41 @@
+title: EDGE Group
+tagline: Energy-efficient embedded systems, RISC-V platforms and hardware security at the
+  Dipartimento di Elettronica e Telecomunicazioni, Politecnico di Torino.
+description: EDGE group @ Dipartimento di Elettronica e Telecomunicazioni (DET), Politecnico di Torino.
+url: https://edge-group-polito.github.io
+github_org: edge-group-polito
+
+# Nav bar. Add a page -> add a line here.
+nav:
+  - title: Research
+    url: /research/
+  - title: Projects
+    url: /projects/
+  - title: Articles
+    url: /articles/
+  - title: People
+    url: /people/
+  - title: Contact
+    url: /contact/
+
+# GitHub topic (left) -> section title on the Projects page (right).
+# Tag a repo on GitHub (About > gear > Topics) with one of these and it appears there.
+# Unknown topics fall into "Other". Several topics -> repo shows in several sections.
+#
+# Left side must be a valid GitHub topic: lowercase letters, numbers and hyphens only.
+# No slashes, no spaces, no uppercase. The right side is free text — that's where
+# "AI/ML" and "Conferences & Workshops" get their punctuation back.
+topics:
+  cryptography: Cryptography & Hardware Security
+  risc-v: RISC-V
+  ai-ml: AI/ML
+  tools: Tools
+  teaching: Teaching
+  conferences: Conferences & Workshops
+  workshops: Conferences & Workshops
+
+permalink: /articles/:title/
+
+exclude:
+  - CLAUDE.md
+  - README.md

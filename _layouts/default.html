@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% if page.title %}{{ page.title }} — {% endif %}{{ site.title }}</title>
+<meta name="description" content="{{ page.description | default: site.description }}">
+<link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+    <nav>
+      {% for item in site.nav %}
+        <a href="{{ item.url | relative_url }}"{% if page.url contains item.url %} class="here"{% endif %}>{{ item.title }}</a>
+      {% endfor %}
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  {% if page.title and page.hide_title != true %}<h1>{{ page.title }}</h1>{% endif %}
+  {{ content }}
+</main>
+
+<footer class="wrap">
+  <p>© EDGE Group, Politecnico di Torino ·
+     <a href="https://github.com/{{ site.github_org }}">GitHub</a></p>
+</footer>
+
+</body>
+</html>
