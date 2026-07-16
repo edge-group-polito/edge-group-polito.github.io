@@ -12,6 +12,7 @@ title: Projects
 // Topic -> section title comes from `topics:` in _config.yml. Edit it there, not here.
 const TOPICS = {{ site.topics | jsonify }};
 const ORG = {{ site.github_org | jsonify }};
+const HIDE = {{ site.hide_topic | jsonify }};
 const FALLBACK = "Other";
 
 const el = document.getElementById("repos");
@@ -21,8 +22,12 @@ function group(repos) {
   const groups = new Map(Object.values(TOPICS).map(t => [t, []]));
   groups.set(FALLBACK, []);
   for (const r of repos) {
-    if (r.fork || r.archived || r.name === ".github" || r.name.endsWith(".github.io")) continue;
+    if (r.name === ".github" || r.name.endsWith(".github.io")) continue;
+    if (r.topics.includes(HIDE)) continue;   // explicit opt-out beats every rule below
     const hits = [...new Set(r.topics.map(t => TOPICS[t]).filter(Boolean))];
+    // A fork is an upstream mirror until someone tags it — a topic means we work on it.
+    // So tagging x-heep or cva6 is what pulls it onto the page.
+    if (r.fork && !hits.length) continue;
     for (const g of (hits.length ? hits : [FALLBACK])) groups.get(g).push(r);
   }
   return [...groups].filter(([, rs]) => rs.length);
@@ -35,6 +40,8 @@ function card(r) {
     <div class="meta">
       ${r.language ? `<span>${esc(r.language)}</span>` : ""}
       <span>★ ${r.stargazers_count}</span>
+      ${r.archived ? `<span class="tag">archived</span>` : ""}
+      ${r.fork ? `<span class="tag">fork</span>` : ""}
     </div>
   </div>`;
 }

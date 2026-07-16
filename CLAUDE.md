@@ -36,8 +36,22 @@ load and groups repos by their **GitHub topics**. The topic-to-section mapping l
 - New repo → tag it on GitHub (repo page → About → gear → Topics). Nothing to commit here.
 
 Several topics on one repo → it appears in several sections. Untagged repos land in "Other"
-so nothing disappears silently. Forks, archived repos, `.github`, and the site repo itself
-are filtered out.
+so nothing disappears silently.
+
+What is hidden, and why — this is deliberate, don't "simplify" it away:
+
+- **Anything tagged `no-site`** (`hide_topic:` in `_config.yml`): explicit opt-out, checked
+  first, beats every other rule. Tag a repo `no-site` on GitHub and it leaves the page.
+- `.github` and the site repo itself: infrastructure, never interesting.
+- **Untagged forks**: the org carries ~14 upstream mirrors (`llvm-project`, `pulp-runtime`,
+  `pulpissimo`, `cv32e40x`, …) that nobody works on. A fork *with* a known topic is shown —
+  tagging it is how you say "this fork is ours". That is why `x-heep` and `cva6` are absent:
+  they need a topic, not a code change.
+- Archived repos **are shown**, with an `archived` badge. `KALIPSO`, `LOKI`, `ATHOS` and
+  `CHIMERA` are real group output and were wrongly hidden at first.
+
+A blanket `if (r.fork) continue` was the original bug: it hid `x-heep` (the group's own
+platform) and `keccak_or_ascon` even after it was tagged.
 
 Two failure modes worth knowing, both already hit once:
 

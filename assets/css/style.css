@@ -41,7 +41,9 @@ h3 { font-size: .85rem; margin: 2.5rem 0 .9rem; text-transform: uppercase;
 .card a.name { font-weight: 600; text-decoration: none; }
 .card p { margin: 0; font-size: .9rem; color: var(--muted); }
 .card .meta { font-size: .8rem; color: var(--muted); display: flex; gap: .8rem;
-              margin-top: auto; padding-top: .5rem; }
+              margin-top: auto; padding-top: .5rem; align-items: center; }
+.card .meta .tag { border: 1px solid var(--line); border-radius: 20px; padding: 0 .5rem;
+                   font-size: .7rem; text-transform: uppercase; letter-spacing: .04em; }
 
 ul.people, ul.articles { list-style: none; padding: 0; }
 ul.people { display: grid; gap: .5rem; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); }

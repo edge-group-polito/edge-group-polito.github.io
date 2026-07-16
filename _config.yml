@@ -18,6 +18,10 @@ nav:
   - title: Contact
     url: /contact/
 
+# Tag a repo with this topic on GitHub to keep it off the site entirely.
+# Beats everything below — a repo tagged both `cryptography` and `no-site` stays hidden.
+hide_topic: no-site
+
 # GitHub topic (left) -> section title on the Projects page (right).
 # Tag a repo on GitHub (About > gear > Topics) with one of these and it appears there.
 # Unknown topics fall into "Other". Several topics -> repo shows in several sections.
