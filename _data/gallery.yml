@@ -1,27 +1,164 @@
-# One entry per photo. `file` must match a filename in the `photo/` folder exactly.
-# `event` is the caption/tag photos are grouped by on the Gallery page — reuse the
-# same string for every photo from the same event so they land in one section.
-- file: 55340793821_eebb45ee84_o.jpg
+# One entry per photo. `file` is the path relative to the `photo/` folder (include the
+# event subfolder, e.g. `2026-risc-v/some-file.jpg`) and must match exactly.
+# `event` is the caption/tag photos are grouped by within a year on the Gallery page —
+# reuse the same string for every photo from the same event so they land in one section.
+# `year` groups events into the year dropdown.
+- file: 2026-risc-v/55340793821_eebb45ee84_o.jpg
   event: "RISC-V Summit 2026 - Bologna"
-- file: 55342656411_6910a22412_o.jpg
+  year: 2026
+- file: 2026-risc-v/55342656411_6910a22412_o.jpg
   event: "RISC-V Summit 2026 - Bologna"
-- file: 55342803338_6d11162533_o.jpg
+  year: 2026
+- file: 2026-risc-v/55342803338_6d11162533_o.jpg
   event: "RISC-V Summit 2026 - Bologna"
-- file: 55342847299_6273de3816_o.jpg
+  year: 2026
+- file: 2026-risc-v/55342847299_6273de3816_o.jpg
   event: "RISC-V Summit 2026 - Bologna"
-- file: 55342847619_1980966920_o.jpg
+  year: 2026
+- file: 2026-risc-v/55342847619_1980966920_o.jpg
   event: "RISC-V Summit 2026 - Bologna"
-- file: photo_1_2026-07-16_16-16-25.jpg
+  year: 2026
+- file: 2026-risc-v/photo_1_2026-07-16_16-16-25.jpg
   event: "RISC-V Summit 2026 - Bologna"
-- file: photo_2_2026-07-16_16-16-25.jpg
+  year: 2026
+- file: 2026-risc-v/photo_2_2026-07-16_16-16-25.jpg
   event: "RISC-V Summit 2026 - Bologna"
-- file: photo_3_2026-07-16_16-16-25.jpg
+  year: 2026
+- file: 2026-risc-v/photo_3_2026-07-16_16-16-25.jpg
   event: "RISC-V Summit 2026 - Bologna"
-- file: photo_4_2026-07-16_16-16-25.jpg
+  year: 2026
+- file: 2026-risc-v/photo_4_2026-07-16_16-16-25.jpg
   event: "RISC-V Summit 2026 - Bologna"
-- file: photo_5_2026-07-16_16-16-25.jpg
+  year: 2026
+- file: 2026-risc-v/photo_5_2026-07-16_16-16-25.jpg
   event: "RISC-V Summit 2026 - Bologna"
-- file: photo_6_2026-07-16_16-16-25.jpg
+  year: 2026
+- file: 2026-risc-v/photo_6_2026-07-16_16-16-25.jpg
   event: "RISC-V Summit 2026 - Bologna"
-- file: photo_2026-06-25_10-00-20.jpg
+  year: 2026
+- file: 2026-risc-v/photo_2026-06-25_10-00-20.jpg
   event: "RISC-V Summit 2026 - Bologna"
+  year: 2026
+
+- file: 2025-iscas/photo_1_2026-07-16_17-29-11.jpg
+  event: "ISCAS 2025 - London"
+  year: 2025
+- file: 2025-iscas/photo_2_2026-07-16_17-29-11.jpg
+  event: "ISCAS 2025 - London"
+  year: 2025
+- file: 2025-iscas/photo_3_2026-07-16_17-29-11.jpg
+  event: "ISCAS 2025 - London"
+  year: 2025
+
+- file: 2025-isvlsi/photo_1_2026-07-16_17-28-05.jpg
+  event: "ISVLSI 2025 - Kalamata"
+  year: 2025
+- file: 2025-isvlsi/photo_2_2026-07-16_17-28-05.jpg
+  event: "ISVLSI 2025 - Kalamata"
+  year: 2025
+
+- file: 2025-risc-v/photo_1_2026-07-16_17-30-41.jpg
+  event: "RISC-V Summit Europe 2025 - Paris"
+  year: 2025
+- file: 2025-risc-v/photo_2_2026-07-16_17-30-41.jpg
+  event: "RISC-V Summit Europe 2025 - Paris"
+  year: 2025
+- file: 2025-risc-v/photo_3_2026-07-16_17-30-41.jpg
+  event: "RISC-V Summit Europe 2025 - Paris"
+  year: 2025
+- file: 2025-risc-v/photo_4_2026-07-16_17-30-41.jpg
+  event: "RISC-V Summit Europe 2025 - Paris"
+  year: 2025
+- file: 2025-risc-v/photo_5_2026-07-16_17-30-41.jpg
+  event: "RISC-V Summit Europe 2025 - Paris"
+  year: 2025
+- file: 2025-risc-v/photo_6_2026-07-16_17-30-41.jpg
+  event: "RISC-V Summit Europe 2025 - Paris"
+  year: 2025
+- file: 2025-risc-v/photo_7_2026-07-16_17-30-41.jpg
+  event: "RISC-V Summit Europe 2025 - Paris"
+  year: 2025
+- file: 2025-risc-v/photo_8_2026-07-16_17-30-41.jpg
+  event: "RISC-V Summit Europe 2025 - Paris"
+  year: 2025
+
+- file: 2025-date/photo_1_2026-07-16_17-35-28.jpg
+  event: "DATE 2025 - Lione"
+  year: 2025
+- file: 2025-date/photo_2_2026-07-16_17-35-28.jpg
+  event: "DATE 2025 - Lione"
+  year: 2025
+- file: 2025-date/photo_3_2026-07-16_17-35-28.jpg
+  event: "DATE 2025 - Lione"
+  year: 2025
+- file: 2025-date/photo_4_2026-07-16_17-35-28.jpg
+  event: "DATE 2025 - Lione"
+  year: 2025
+- file: 2025-date/photo_5_2026-07-16_17-35-28.jpg
+  event: "DATE 2025 - Lione"
+  year: 2025
+- file: 2025-date/photo_6_2026-07-16_17-35-28.jpg
+  event: "DATE 2025 - Lione"
+  year: 2025
+- file: 2025-date/photo_7_2026-07-16_17-35-28.jpg
+  event: "DATE 2025 - Lione"
+  year: 2025
+- file: 2025-date/photo_8_2026-07-16_17-35-28.jpg
+  event: "DATE 2025 - Lione"
+  year: 2025
+
+- file: 2026-date/photo_1_2026-07-16_17-22-40.jpg
+  event: "DATE 2026 - Verona"
+  year: 2026
+- file: 2026-date/photo_2_2026-07-16_17-22-40.jpg
+  event: "DATE 2026 - Verona"
+  year: 2026
+- file: 2026-date/photo_3_2026-07-16_17-22-40.jpg
+  event: "DATE 2026 - Verona"
+  year: 2026
+- file: 2026-date/photo_4_2026-07-16_17-22-40.jpg
+  event: "DATE 2026 - Verona"
+  year: 2026
+- file: 2026-date/photo_5_2026-07-16_17-22-40.jpg
+  event: "DATE 2026 - Verona"
+  year: 2026
+- file: 2026-date/photo_6_2026-07-16_17-22-40.jpg
+  event: "DATE 2026 - Verona"
+  year: 2026
+- file: 2026-date/photo_7_2026-07-16_17-22-40.jpg
+  event: "DATE 2026 - Verona"
+  year: 2026
+- file: 2026-date/photo_8_2026-07-16_17-22-40.jpg
+  event: "DATE 2026 - Verona"
+  year: 2026
+
+- file: 2026-heep-up/photo_1_2026-07-16_17-24-46.jpg
+  event: "Heep-Up Event 2026 - Torino"
+  year: 2026
+- file: 2026-heep-up/photo_2_2026-07-16_17-24-46.jpg
+  event: "Heep-Up Event 2026 - Torino"
+  year: 2026
+- file: 2026-heep-up/photo_3_2026-07-16_17-24-46.jpg
+  event: "Heep-Up Event 2026 - Torino"
+  year: 2026
+- file: 2026-heep-up/photo_4_2026-07-16_17-24-46.jpg
+  event: "Heep-Up Event 2026 - Torino"
+  year: 2026
+- file: 2026-heep-up/photo_5_2026-07-16_17-24-46.jpg
+  event: "Heep-Up Event 2026 - Torino"
+  year: 2026
+- file: 2026-heep-up/photo_6_2026-07-16_17-24-47.jpg
+  event: "Heep-Up Event 2026 - Torino"
+  year: 2026
+- file: 2026-heep-up/photo_7_2026-07-16_17-24-47.jpg
+  event: "Heep-Up Event 2026 - Torino"
+  year: 2026
+- file: 2026-heep-up/photo_8_2026-07-16_17-24-47.jpg
+  event: "Heep-Up Event 2026 - Torino"
+  year: 2026
+- file: 2026-heep-up/photo_9_2026-07-16_17-24-47.jpg
+  event: "Heep-Up Event 2026 - Torino"
+  year: 2026
+- file: 2026-heep-up/photo_10_2026-07-16_17-24-47.jpg
+  event: "Heep-Up Event 2026 - Torino"
+  year: 2026

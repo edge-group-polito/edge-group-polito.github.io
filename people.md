@@ -45,7 +45,7 @@ permalink: /people/
     <a class="person-link" href="https://www.linkedin.com/in/flavia-guella-1512242bb/?locale=en" target="_blank" rel="noopener"><img src="/assets/img/linkedin.png" alt="" class="linkedin-icon"> LinkedIn ↗</a>
   </li>
   <li class="person">
-    <img class="person-photo" src="/photo/people/omino.png" alt="Vincenzo Petrolo">
+    <img class="person-photo" src="/photo/people/vincenzo.jpg" alt="Vincenzo Petrolo">
     <span class="person-name">Vincenzo Petrolo</span>
     <a class="person-link" href="https://www.linkedin.com/in/vincenzo-petrolo-160369175/" target="_blank" rel="noopener"><img src="/assets/img/linkedin.png" alt="" class="linkedin-icon"> LinkedIn ↗</a>
   </li>

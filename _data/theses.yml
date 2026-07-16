@@ -1,0 +1,7 @@
+# One entry per completed/ongoing thesis. `link` should point to the thesis PDF or its
+# institutional repository page (e.g. PoliTO's webthesis). Example:
+# - student: "Name Surname"
+#   title: "Thesis title"
+#   year: 2026
+#   link: https://webthesis.biblio.polito.it/...
+[]

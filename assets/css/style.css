@@ -82,6 +82,24 @@ ul.articles a { font-weight: 600; text-decoration: none; font-size: 1.05rem; }
 ul.articles p { margin: .25rem 0 0; color: var(--muted); font-size: .9rem; }
 time { color: var(--muted); font-size: .85rem; }
 
+ul.thesis-proposals, ul.thesis-list { list-style: none; padding: 0; }
+ul.thesis-proposals { display: flex; flex-direction: column; gap: 1rem; margin: 0 0 3rem; }
+.proposal {
+  border: 1px solid var(--line); border-radius: 10px; padding: 1rem 1.25rem;
+  background: var(--card);
+}
+.proposal-title { font-weight: 600; font-size: 1.05rem; display: block; }
+.proposal-advisor { color: var(--muted); font-size: .85rem; display: block; margin-top: .2rem; }
+.proposal p { margin: .6rem 0 0; color: var(--fg); font-size: .95rem; }
+
+.thesis-entry {
+  padding: .75rem 0; border-bottom: 1px solid var(--line);
+  display: flex; flex-wrap: wrap; align-items: baseline; gap: .5rem;
+}
+.thesis-student { font-weight: 600; }
+.thesis-title { color: var(--muted); }
+.thesis-link { margin-left: auto; font-size: .9rem; white-space: nowrap; text-decoration: none; }
+
 .pub-search { margin-bottom: 2rem; }
 .pub-search input {
   width: 100%; font: inherit; color: var(--fg); background: var(--card);

@@ -13,10 +13,12 @@ _layouts/post.html     article wrapper (title, date, byline)
 assets/css/style.css   all styling, no framework
 index.html             landing page
 projects.html          repo list + the fetch/grouping script
-research.md people.md contact.md articles.md gallery.md
+research.md people.md contact.md articles.md gallery.md thesis.md
 _posts/                one Markdown file per article
-_data/gallery.yml       photo filename -> event, read by gallery.md
-photo/                  the actual gallery photo files, served as static files
+_data/gallery.yml       photo path (incl. event subfolder) -> event/year, read by gallery.md
+_data/theses.yml        completed/ongoing thesis list, read by thesis.md
+_data/thesis_proposals.yml  open thesis topics, read by thesis.md
+photo/<event>/          gallery photos, one subfolder per event
 photo/people/           headshots referenced directly by path in people.md
 ```
 
@@ -35,17 +37,23 @@ photo/people/           headshots referenced directly by path in people.md
   (not the abstract) — see the `data-title`/`data-authors` attributes on `.pub` in
   `articles.md` if that ever needs to change.
 - **A repo** → nothing here. Tag it on GitHub. See below.
-- **A gallery photo** → drop the image file in `photo/`, then add one entry to
-  `_data/gallery.yml` (`file:` the exact filename, `event:` the caption/tag). `gallery.md`
-  groups photos by `event` automatically — reuse the same `event` string across photos
-  from the same event so they land in one section. This is a Jekyll data file (not a
-  page), because GitHub Pages builds with no custom plugins and no Action, so Liquid
-  needs YAML it can iterate natively — a free-text manifest can't be parsed without one.
+- **A gallery photo** → drop the image file in `photo/<event-folder>/`, then add one entry
+  to `_data/gallery.yml` (`file:` the path relative to `photo/`, including the event
+  subfolder; `event:` the caption/tag; `year:` for the year dropdown). `gallery.md` groups
+  entries by `year` into click-to-expand `<details>` (newest year open by default), then by
+  `event` within each year — reuse the same `event` string across photos from the same
+  event so they land in one section. This is a Jekyll data file (not a page), because
+  GitHub Pages builds with no custom plugins and no Action, so Liquid needs YAML it can
+  iterate natively — a free-text manifest can't be parsed without one.
 - **A person** → drop a headshot in `photo/people/` and reference it directly by path
   in `people.md` (`<img class="person-photo" src="/photo/people/name.jpg" ...>`). No repo
   photo yet → point at `/photo/people/omino.png`, the placeholder silhouette. `.person-photo`
   CSS crops every photo to the same small circular size regardless of source dimensions,
   so photos don't need to be pre-resized before adding.
+- **A thesis proposal** → add one entry to `_data/thesis_proposals.yml` (`title`, `advisor`,
+  `description`). **A thesis student** → add one entry to `_data/theses.yml` (`student`,
+  `title`, `year`, `link` to the thesis PDF/repository page). Both render on `thesis.md`;
+  unlike `/articles/`, the thesis list is plain — name, title, link, no abstract box.
 
 ## The project list
 
