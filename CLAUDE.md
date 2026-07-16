@@ -17,6 +17,7 @@ research.md people.md contact.md articles.md gallery.md
 _posts/                one Markdown file per article
 _data/gallery.yml       photo filename -> event, read by gallery.md
 photo/                  the actual gallery photo files, served as static files
+photo/people/           headshots referenced directly by path in people.md
 ```
 
 ## Adding things
@@ -37,6 +38,11 @@ photo/                  the actual gallery photo files, served as static files
   from the same event so they land in one section. This is a Jekyll data file (not a
   page), because GitHub Pages builds with no custom plugins and no Action, so Liquid
   needs YAML it can iterate natively — a free-text manifest can't be parsed without one.
+- **A person** → drop a headshot in `photo/people/` and reference it directly by path
+  in `people.md` (`<img class="person-photo" src="/photo/people/name.jpg" ...>`). No repo
+  photo yet → point at `/photo/people/omino.png`, the placeholder silhouette. `.person-photo`
+  CSS crops every photo to the same small circular size regardless of source dimensions,
+  so photos don't need to be pre-resized before adding.
 
 ## The project list
 
