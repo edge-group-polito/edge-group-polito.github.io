@@ -20,8 +20,16 @@ Papers and articles published by the group. Click a box to read the abstract.
     </details>
     {% if post.paper_url or post.repo_url %}
     <div class="pub-links">
-      {% if post.paper_url %}<a href="{{ post.paper_url }}" target="_blank" rel="noopener">Paper ↗</a>{% endif %}
-      {% if post.repo_url %}<a href="{{ post.repo_url }}" target="_blank" rel="noopener">Repository ↗</a>{% endif %}
+      {% if post.paper_url %}
+      <a href="{{ post.paper_url }}" target="_blank" rel="noopener" title="Paper" aria-label="Paper">
+        <img src="{{ '/assets/img/logo.png' | relative_url }}" alt="Paper" class="pub-icon invert-on-light">
+      </a>
+      {% endif %}
+      {% if post.repo_url %}
+      <a href="{{ post.repo_url }}" target="_blank" rel="noopener" title="Repository" aria-label="Repository">
+        <img src="{{ '/assets/img/github.png' | relative_url }}" alt="Repository" class="pub-icon invert-on-dark">
+      </a>
+      {% endif %}
     </div>
     {% endif %}
   </li>

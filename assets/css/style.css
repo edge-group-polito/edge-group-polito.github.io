@@ -17,12 +17,21 @@ body {
 a { color: var(--accent); }
 img { max-width: 100%; height: auto; }
 
+/* Icon assets are single-color: light-mode source images need inverting for a dark
+   background and vice versa, so a white logo or black glyph stays visible in both themes. */
+.invert-on-light { filter: invert(1); }
+.invert-on-dark { filter: none; }
+@media (prefers-color-scheme: dark) {
+  .invert-on-light { filter: none; }
+  .invert-on-dark { filter: invert(1); }
+}
+
 header.site { border-bottom: 1px solid var(--line); padding: 1.25rem 0; margin-bottom: 3rem; }
 header.site .wrap { display: flex; flex-wrap: wrap; gap: 1rem; align-items: baseline;
                     justify-content: space-between; }
 .brand { font-weight: 700; font-size: 1.15rem; text-decoration: none; color: var(--fg);
          display: inline-flex; align-items: center; gap: .5rem; }
-.brand-logo { height: 1.8rem; width: auto; }
+.brand-logo { height: 1.2rem; width: auto; }
 header.site nav a { margin-left: 1.1rem; text-decoration: none; color: var(--muted); font-size: .95rem; }
 header.site nav a:first-child { margin-left: 0; }
 header.site nav a.here { color: var(--fg); font-weight: 600; }
@@ -61,7 +70,9 @@ ul.people { display: grid; gap: .75rem; grid-template-columns: repeat(auto-fill,
 }
 .person-name { font-weight: 600; }
 .person-role { color: var(--muted); font-size: .85rem; }
-.person-link { font-size: .85rem; margin-top: .4rem; text-decoration: none; }
+.person-link { font-size: .85rem; margin-top: .4rem; text-decoration: none;
+               display: inline-flex; align-items: center; gap: .35rem; }
+.linkedin-icon { width: 16px; height: 16px; display: inline-block; }
 ul.articles li { padding: 1rem 0; border-bottom: 1px solid var(--line); }
 ul.articles a { font-weight: 600; text-decoration: none; font-size: 1.05rem; }
 ul.articles p { margin: .25rem 0 0; color: var(--muted); font-size: .9rem; }
@@ -84,8 +95,10 @@ ul.publications { list-style: none; padding: 0; display: flex; flex-direction: c
 .pub-abstract { margin: .85rem 0 0 1.1rem; color: var(--fg); font-size: .95rem; }
 .pub-abstract > :first-child { margin-top: 0; }
 .pub-abstract > :last-child { margin-bottom: 0; }
-.pub-links { display: flex; flex-direction: column; gap: .4rem; flex-shrink: 0;
-             text-align: right; font-size: .9rem; white-space: nowrap; }
+.pub-links { display: flex; flex-direction: row; gap: .6rem; flex-shrink: 0; align-items: flex-start; }
+.pub-links a { display: block; opacity: .8; transition: opacity .15s; }
+.pub-links a:hover { opacity: 1; }
+.pub-icon { width: 26px; height: 26px; object-fit: contain; display: block; }
 
 .post { max-width: 68ch; }
 .post .byline { margin: -1rem 0 2rem; color: var(--muted); font-size: .9rem; }
