@@ -52,7 +52,9 @@ fetch(`https://api.github.com/orgs/${ORG}/repos?per_page=100&sort=updated`)
     el.innerHTML = group(repos).map(([title, rs]) => `
       <h3>${esc(title)}</h3>
       <div class="grid">${rs.sort((a, b) => b.stargazers_count - a.stargazers_count)
-                           .map(card).join("")}</div>`).join("")
+                           .map(card).join("")}</div>
+      ${title === TOPICS.cryptography ? `<p class="crash-note">For more info:
+        <a href="https://crash-team-edge-group.github.io/" target="_blank" rel="noopener">https://crash-team-edge-group.github.io/</a></p>` : ""}`).join("")
       || "<p>No public repositories yet.</p>";
   })
   .catch(() => {
