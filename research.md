@@ -20,15 +20,23 @@ academic labs and industry partners.
 
 ## RISC-V platforms and cores
 
-TODO
+The group designs custom RISC-V cores and the SoC platforms around them, from the
+in-order pipelines used in teaching to LEN5, an out-of-order superscalar core, and
+X-HEEP, an open-source microcontroller platform used as the base for several chip
+tape-outs including POLHEEPO.
 
 ## Hardware security and cryptography
 
-TODO
+Hardware accelerators for cryptography, with a focus on post-quantum schemes (CRYSTALS-Kyber,
+Ascon) and the RISC-V ISA extensions and coprocessors needed to run them efficiently —
+CHIMERA, HORCRUX, LOKI and ATHOS are recent examples. Work also covers side-channel
+analysis and true random number generation.
 
 ## EDA and design tools
 
-TODO
+Digital design flows to bring the group's cores and accelerators from RTL to FPGA and
+silicon, together with the internal tools needed to support them — testbenches, SBST
+and system-integration flows, and the scripts that automate synthesis and place-and-route.
 
 <div class="photo-strip">
   <img src="/assets/img/group-photo.jpg" alt="The EDGE Group">

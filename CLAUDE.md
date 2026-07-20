@@ -13,12 +13,13 @@ _layouts/post.html     article wrapper (title, date, byline)
 assets/css/style.css   all styling, no framework
 index.html             landing page
 projects.html          repo list + the fetch/grouping script
-research.md people.md contact.md articles.md gallery.md thesis.md posts.md
+thesis.html            thesis proposals + thesis students, year accordion
+research.md people.md contact.md articles.md gallery.md posts.md
 _posts/                one Markdown file per article
 _updates/               one Markdown file per social-style post, read by posts.md
 _data/gallery.yml       photo path (incl. event subfolder) -> event/year, read by gallery.md
-_data/theses.yml        completed/ongoing thesis list, read by thesis.md
-_data/thesis_proposals.yml  open thesis topics, read by thesis.md
+_data/theses.yml        completed/ongoing thesis list, read by thesis.html
+_data/thesis_proposals.yml  open thesis topics, read by thesis.html
 photo/<event>/          gallery photos, one subfolder per event
 photo/people/           headshots referenced directly by path in people.md
 ```
@@ -52,9 +53,12 @@ photo/people/           headshots referenced directly by path in people.md
   CSS crops every photo to the same small circular size regardless of source dimensions,
   so photos don't need to be pre-resized before adding.
 - **A thesis proposal** → add one entry to `_data/thesis_proposals.yml` (`title`, `advisor`,
-  `description`). **A thesis student** → add one entry to `_data/theses.yml` (`student`,
-  `title`, `year`, `link` to the thesis PDF/repository page). Both render on `thesis.md`;
-  unlike `/articles/`, the thesis list is plain — name, title, link, no abstract box.
+  `description`). No open proposals → the page falls back to the advisors' contact emails
+  instead of a list. **A thesis student** → add one entry to `_data/theses.yml` (`student`,
+  `title`, `year`, `link` to the thesis PDF/repository page). Both render on `thesis.html`,
+  which groups thesis students by `year` into the same click-to-expand accordion as
+  Articles/Gallery/Posts (newest year open by default); unlike `/articles/`, each entry is
+  plain — name, title, link, no abstract box.
 - **A post** → new file in `_updates/YYYY-MM-DD-slug.md` (front matter: `title`, `date`,
   `link`, `link_label`, optional `photos:` list; body is the post text, English only).
   `_updates` is a second Jekyll collection (`site.updates`, configured in `_config.yml`
@@ -64,17 +68,19 @@ photo/people/           headshots referenced directly by path in people.md
   Gallery, rendered as social-media-style cards (avatar, date, body, optional photo grid,
   link button) rather than publication boxes.
 
-**`posts.html` is `.html`, not `.md` — do not rename it back.** kramdown (Jekyll's
-Markdown renderer) treats a raw HTML block (`<div>`, `<ul>`, `<li>`, …) as ending at the
-first blank line, and Liquid control-flow tags (`{% if %}`, `{% for %}`, …) each leave a
+**`posts.html` and `thesis.html` are `.html`, not `.md` — do not rename them back.** kramdown
+(Jekyll's Markdown renderer) treats a raw HTML block (`<div>`, `<ul>`, `<li>`, …) as ending at
+the first blank line, and Liquid control-flow tags (`{% if %}`, `{% for %}`, …) each leave a
 blank line behind once rendered — so a `.md` file mixing loops with nested HTML gets its
 `<div>`/`<li>` wrappers silently dropped, and elements fall back to raw, unstyled,
 natural-size rendering (this is exactly what made the feed briefly render as a giant
 unstyled logo/photos with no card background). `.html` pages skip the Markdown pass
-entirely and aren't affected — same reason `projects.html` is `.html`. `articles.md` and
-`gallery.md` have the same Liquid/HTML-nesting shape and may have the same latent issue;
-if either one ever looks broken (missing card backgrounds, images at native size), convert
-it to `.html` the same way before debugging anything else.
+entirely and aren't affected — same reason `projects.html` is `.html`. `thesis.html` was
+converted from `thesis.md` for this reason the moment its thesis-students list gained a
+year-by-year `<details>` accordion (same nested for-loop-in-HTML shape as Articles/Gallery).
+`articles.md` and `gallery.md` still have that shape and may have the same latent issue; if
+either one ever looks broken (missing card backgrounds, images at native size), convert it to
+`.html` the same way before debugging anything else.
 
 ## The project list
 

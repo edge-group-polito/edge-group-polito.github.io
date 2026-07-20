@@ -4,4 +4,527 @@
 #   title: "Thesis title"
 #   year: 2026
 #   link: https://webthesis.biblio.polito.it/...
-[]
+#
+# Populated from the group's PoliTO webthesis advisor pages (Guido Masera and Maurizio
+# Martina), 2023 onward, deduplicated on co-advised theses (same student appears under
+# both advisors).
+- student: Damiano Rossetti
+  title: 'Restauro digitale dei supporti analogici del patrimonio audiovisivo RAI: analisi critica dell''impiego dell''intelligenza artificiale nella ricostruzione di frame mancanti o estremamente corrotti = Digital restoration of analog media from RAI''s audiovisual heritage: critical analysis of the use of artificial intelligence in the reconstruction of missing or extremely corrupted frames'
+  year: 2026
+  link: https://webthesis.biblio.polito.it/39644/
+- student: Filippo Borghetto
+  title: 'PWM-Modulated Digital RF Amplifiers: Principles, Architectures, and Applications'
+  year: 2026
+  link: https://webthesis.biblio.polito.it/39701/
+- student: Giulia Solito
+  title: Reset sequence analysis for deep bug hunting  Exploring the use of reset sequences in hardware verification
+  year: 2026
+  link: https://webthesis.biblio.polito.it/39780/
+- student: Giuseppe Cutrera
+  title: Enhancing Security and Performance of Post-Quantum Cryptographic Signatures on Ramps
+  year: 2026
+  link: https://webthesis.biblio.polito.it/39734/
+- student: Lorenzo Marino
+  title: Exploration on a dynamically reconfigurable coprocessor engine
+  year: 2026
+  link: https://webthesis.biblio.polito.it/39921/
+- student: Manuel Cataldo
+  title: 'AI-Optimized Design Verification: Comparative Analysis'
+  year: 2026
+  link: https://webthesis.biblio.polito.it/39700/
+- student: Marco Crisologo
+  title: Energy-Efficiency Framework and Optimization of a Floating-Point Unit for HPC-oriented Architectures
+  year: 2026
+  link: https://webthesis.biblio.polito.it/39737/
+- student: Marco Rausa
+  title: Multiple ECC design and implementation in multi-bit fault tolerant memories
+  year: 2026
+  link: https://webthesis.biblio.polito.it/39763/
+- student: Martina Di Leo
+  title: Predicting IC design convergence during the ECO stage based on post-route results
+  year: 2026
+  link: https://webthesis.biblio.polito.it/39733/
+- student: Riccardo Fusari
+  title: 'Bus-Level Debug for RISC-V: A Hardware Sniffer and Automated Verification Framework for X-HEEP'
+  year: 2026
+  link: https://webthesis.biblio.polito.it/39736/
+- student: Roberta Leo
+  title: Algorithmic and architectural analysis for an in-field reconfigurable receiver decoder for NFC Card-Emulation
+  year: 2026
+  link: https://webthesis.biblio.polito.it/39765/
+- student: Samuele Neyroz
+  title: Automated Hardware Verification  Verification Attribute Generation from Multi-Source Specifications
+  year: 2026
+  link: https://webthesis.biblio.polito.it/39764/
+- student: Alessia Casella
+  title: 'Evolution of video codecs: a comparative analysis of HEVC, VVC, AV1, and AVM'
+  year: 2025
+  link: https://webthesis.biblio.polito.it/35283/
+- student: Andrea Bonino
+  title: Analyzing and Extending Instruction Sets for Efficient Cryptographic Computation
+  year: 2025
+  link: https://webthesis.biblio.polito.it/36482/
+- student: Chiara Spalluto
+  title: 'Evaluation and Integration of a Machine Learning-Based Macro Placer: Impact on Physical Design Flow and Quality Metrics'
+  year: 2025
+  link: https://webthesis.biblio.polito.it/36514/
+- student: Claudia Pecorella
+  title: All-Digital Noise-Tolerant Voltage-Level Detector for Dynamic Configuration of SRAM Read/Write-Assist Circuits
+  year: 2025
+  link: https://webthesis.biblio.polito.it/37694/
+- student: Daniele Di Capua
+  title: Design Space Exploration of Integrated Circuit Floorplans through Area Minimization and ML-Guided Macro Placement
+  year: 2025
+  link: https://webthesis.biblio.polito.it/37621/
+- student: Emanuele Bongiovanni
+  title: Custom RISC-V Processor Development in an FPGA Architecture for On-Board Computing in Space Applications
+  year: 2025
+  link: https://webthesis.biblio.polito.it/35378/
+- student: Enrico Manfredi
+  title: 'Tightly-coupled VS Loosely-coupled accelerators for data compression in space applications: a NOEL-V case study'
+  year: 2025
+  link: https://webthesis.biblio.polito.it/35394/
+- student: Francesco Azzinnari
+  title: Hardware Architecture for Homomorphic Encrypted Spiking Neural Networks
+  year: 2025
+  link: https://webthesis.biblio.polito.it/38711/
+- student: Gabriele Adragna
+  title: Area and performance evaluation in the physical design of advanced integrated circuits
+  year: 2025
+  link: https://webthesis.biblio.polito.it/35377/
+- student: Gabriele Attanasio
+  title: Architectural coverage for FEAT_GCS in an AArch64 CPU
+  year: 2025
+  link: https://webthesis.biblio.polito.it/38706/
+- student: Gabriele Parisi
+  title: Error Resilience design for Automotive Control Systems
+  year: 2025
+  link: https://webthesis.biblio.polito.it/36516/
+- student: Gabriele Sanna
+  title: Migration of register verification methodologies, with focus on workflow automation and profiling
+  year: 2025
+  link: https://webthesis.biblio.polito.it/37701/
+- student: Giorgio Iemmolo
+  title: Architectural Analysis and Performance Optimization of an I2C-to-AHB Bridge for RISCV DMA
+  year: 2025
+  link: https://webthesis.biblio.polito.it/37659/
+- student: Lorenzo Badas
+  title: Alternative Store Buffers
+  year: 2025
+  link: https://webthesis.biblio.polito.it/38603/
+- student: Lorenzo Capobianco
+  title: 'Open Hardware, Hidden Risks: Mitigating passive power side-channel leakage in RISC-V microcontrollers'
+  year: 2025
+  link: https://webthesis.biblio.polito.it/37613/
+- student: Lorenzo Deltetto
+  title: Design of an Advanced Register Renaming Architecture in a RISC-V Vector Processing Unit
+  year: 2025
+  link: https://webthesis.biblio.polito.it/36507/
+- student: Luca Sciolla
+  title: Progettazione e sviluppo di un sistema embedded ad alte prestazioni per il controllo assi motori e acquisizione dati = Design and Development of a High-Performance Embedded System for Motor Axis Control and Data Acquisition
+  year: 2025
+  link: https://webthesis.biblio.polito.it/38748/
+- student: Manuel Nannelli
+  title: Bus Planning to minimize Crosstalk for high frequency design
+  year: 2025
+  link: https://webthesis.biblio.polito.it/37814/
+- student: Manuela Corona
+  title: Development and customization of an SRAM ECC (Error-Correction-Code) intellectual property (IP)
+  year: 2025
+  link: https://webthesis.biblio.polito.it/37623/
+- student: Massimo Giacobbe
+  title: Behavioral modelling of dinamyc virtual FIFOs
+  year: 2025
+  link: https://webthesis.biblio.polito.it/37611/
+- student: Mattia Cozzolino
+  title: An exploration on connectivity and efficiency in Coarse-Grain Reconfigurable Architectures
+  year: 2025
+  link: https://webthesis.biblio.polito.it/38727/
+- student: Michael Elias
+  title: Leveraging Quantization and Approximate Computing to Enhance Adversarial Defense in Deep Neural Networks
+  year: 2025
+  link: https://webthesis.biblio.polito.it/35386/
+- student: Nico Paninforni
+  title: 'Compact Yet Fast: An Efficient d-Order Masked Implementation of Ascon'
+  year: 2025
+  link: https://webthesis.biblio.polito.it/37700/
+- student: Paolo Borgis
+  title: Design of a UVM Based RISC-V model for Digital Functional Verification
+  year: 2025
+  link: https://webthesis.biblio.polito.it/38730/
+- student: Paolo Palma
+  title: Analisi del consumo di potenza di circuiti digitali per sensori MEMS basata sull’esplorazione del codice RTL e relativa sintesi logica preliminare = Analysis of power consumption of digital circuits for MEMS sensors based on RTL code exploration and related preliminary logic synthesis
+  year: 2025
+  link: https://webthesis.biblio.polito.it/35290/
+- student: Pietro Di Maria
+  title: Advanced techniques for cache replacement policies
+  year: 2025
+  link: https://webthesis.biblio.polito.it/37675/
+- student: Riccardo Carita'
+  title: Design of an automatic test adapter for digital communications testing in automotive applications
+  year: 2025
+  link: https://webthesis.biblio.polito.it/35381/
+- student: Salvatore Giacomo Lupica
+  title: Una metodologia efficiente per il test di un SoC basato su microcontrollore, con particolare attenzione alla copertura della memoria Flash integrata. = An efficient approach for testing a microcontroller-based SoC, with focus on embedded flash memory coverage
+  year: 2025
+  link: https://webthesis.biblio.polito.it/36494/
+- student: Saman Alipour
+  title: RISC-V Enabled CGRA SystemC Model for AI and ML Applications
+  year: 2025
+  link: https://webthesis.biblio.polito.it/37612/
+- student: Samuele Pasquale
+  title: 'Implementation of intermittent-robust computing on RISC-V architecture. RISE: RISC-V Intermittent System Extensions for Batteryless IoT Devices'
+  year: 2025
+  link: https://webthesis.biblio.polito.it/38664/
+- student: Sebastiano Casalaina
+  title: Hardware design of a high bit rate decoding chain for a full digital ASK demodulator in Wireless Power Transfer application
+  year: 2025
+  link: https://webthesis.biblio.polito.it/35383/
+- student: Sofia Giannoccaro
+  title: Design and Implementation of an Embedded Board for Vehicular Connectivity
+  year: 2025
+  link: https://webthesis.biblio.polito.it/37656/
+- student: Vincenzo Castilletti
+  title: Riduzione dei tempi di simulazione mediante modellazione analogica comportamentale e semplificazione del DSP negli IP SERDES a 64Gbps = Simulation time reduction through behavioral analog modeling and DSP simplifications in 64Gbps SERDES IP
+  year: 2025
+  link: https://webthesis.biblio.polito.it/38731/
+- student: Abdallah El Mouaatamid
+  title: Additive Fast Fourier Polynomial Multiplier For Code Based Algorithms
+  year: 2024
+  link: https://webthesis.biblio.polito.it/30891/
+- student: Alessandra Ricci
+  title: Characterization and Translation of the PSI5 Protocol between ATE and DUT
+  year: 2024
+  link: https://webthesis.biblio.polito.it/33946/
+- student: Alessio Caviglia
+  title: Lightweight Vector Extension for Efficient Neural Network Inference on RISC-V
+  year: 2024
+  link: https://webthesis.biblio.polito.it/32949/
+- student: Alessio Sanna
+  title: Low-power radar-based system for materials and objects recognition
+  year: 2024
+  link: https://webthesis.biblio.polito.it/31050/
+- student: Andrea Marenco
+  title: Design of Approximate Digital Circuits on Advanced Semiconductor Technologies
+  year: 2024
+  link: https://webthesis.biblio.polito.it/36854/
+- student: Bianca Maria Perra
+  title: Investigation on RAM access patterns for  power improvements
+  year: 2024
+  link: https://webthesis.biblio.polito.it/31045/
+- student: Carmelo Barbagallo
+  title: Study and implementation on FPGA of a new Baseband Datapath and Correlator for GNSS applications
+  year: 2024
+  link: https://webthesis.biblio.polito.it/33060/
+- student: Claudio Clemente
+  title: 'SNAX-CGRA: Ottimizzazione a livello di sistema di un processore CGRA per l''accelerazione efficiente dell''IA = SNAX-CGRA: System-level Optimization of a CGRA Processor for Efficient AI Acceleration'
+  year: 2024
+  link: https://webthesis.biblio.polito.it/31807/
+- student: Davide Altamore
+  title: FPGA implementation of a vehicles detector
+  year: 2024
+  link: https://webthesis.biblio.polito.it/31804/
+- student: Davide Ferraro
+  title: UVM testbench development for I2S protocol verification
+  year: 2024
+  link: https://webthesis.biblio.polito.it/33061/
+- student: Davide Muscia
+  title: Implementation and validation of a hardware countermeasure against fault injection attacks
+  year: 2024
+  link: https://webthesis.biblio.polito.it/33067/
+- student: Emilio Stante
+  title: Utilizzo delle tecniche di Machine Learning per ottimizzare e accelerare le regressioni di test randomici = Using Machine Learning to Optimize and Accelerate Random Regression Testing
+  year: 2024
+  link: https://webthesis.biblio.polito.it/30985/
+- student: Enrico Longo
+  title: Studio, implementazione e verifica in ambiente UVM di algoritmi embedded per sensori MEMS = Study, Implementation, and Verification in UVM Environment of Embedded Algorithms for MEMS Sensors
+  year: 2024
+  link: https://webthesis.biblio.polito.it/33818/
+- student: Fabrizio Cavallone
+  title: Design of an integrated circuit for critical particle detection application
+  year: 2024
+  link: https://webthesis.biblio.polito.it/33987/
+- student: Federica Bader
+  title: Design and integration of a RISC-V based accelerator for Ascon
+  year: 2024
+  link: https://webthesis.biblio.polito.it/33812/
+- student: Francesco Pio De Malde'
+  title: Implementation of RISC-V Instruction Set Extensions
+  year: 2024
+  link: https://webthesis.biblio.polito.it/33988/
+- student: Gabrielegiovanni Montalbano
+  title: Digital Filters Design Automatization for DS-ADCs Applications
+  year: 2024
+  link: https://webthesis.biblio.polito.it/30892/
+- student: Giacomo Catena
+  title: Progettazione RTL di una IP digitale riconfigurabile = RTL Design of a reconfigurable digital IP
+  year: 2024
+  link: https://webthesis.biblio.polito.it/30934/
+- student: Giada Cappelletti
+  title: Generation and verification of timing constraints within the digital implementation flow for the Static Timing Analysis of ASICs
+  year: 2024
+  link: https://webthesis.biblio.polito.it/31805/
+- student: Gioele Arcoleo
+  title: Design of an automatic test adapter for AC power testing of multi-voltage switching power supplies
+  year: 2024
+  link: https://webthesis.biblio.polito.it/33938/
+- student: Giuseppe D'Aquino
+  title: Metodologia di Test per Machine Learning Core (MLC) in sensori MEMS = Testing methodology for Machine Learning Core (MLC) in MEMS sensors
+  year: 2024
+  link: https://webthesis.biblio.polito.it/33817/
+- student: Giuseppe Silvestri
+  title: Automatic detection of timing-violating, non-automatically-fixable paths
+  year: 2024
+  link: https://webthesis.biblio.polito.it/33014/
+- student: Isacco Delpero
+  title: High-Throughput LDPC Multi-Decoder Exploration with novel Quantization and Reconstruction Method
+  year: 2024
+  link: https://webthesis.biblio.polito.it/33104/
+- student: Ivan Biundo
+  title: Integration of LEN5, a RISC-V Out-of-Order Microprocessor, Inside a Low-Power, Heterogeneous System on Chip
+  year: 2024
+  link: https://webthesis.biblio.polito.it/33814/
+- student: Klides Kaba
+  title: Core Concurrency in multi-core system and scheduler development for STRED architecture
+  year: 2024
+  link: https://webthesis.biblio.polito.it/33063/
+- student: Lorenzo Leone
+  title: A reduction-capable AXI XBAR for fast M-to-1 communication
+  year: 2024
+  link: https://webthesis.biblio.polito.it/30937/
+- student: Luca D'Elia
+  title: Quantization Reconstruction Based LDPC Decoders
+  year: 2024
+  link: https://webthesis.biblio.polito.it/30890/
+- student: Luca Esposito
+  title: 'ADC Testing: Comparison between new test methodologies and standard ones'
+  year: 2024
+  link: https://webthesis.biblio.polito.it/33942/
+- student: Luca Scalenghe
+  title: Vegetation index for crop monitoring from multi temporal SAR data
+  year: 2024
+  link: https://webthesis.biblio.polito.it/33251/
+- student: Luigi Asquino
+  title: I3C® Controller for Sensor Hub feature in MEMS sensors
+  year: 2024
+  link: https://webthesis.biblio.polito.it/33811/
+- student: Luigi Tedone
+  title: Development of a high-throughput floating-point CORDIC architecture for automotive applications
+  year: 2024
+  link: https://webthesis.biblio.polito.it/30987/
+- student: Marco Bracchetti
+  title: Hardware Convolutional Neural Network based on Residue Number System
+  year: 2024
+  link: https://webthesis.biblio.polito.it/30887/
+- student: Marco Chiarle
+  title: Scalar Cryptography Extensions for STxP5
+  year: 2024
+  link: https://webthesis.biblio.polito.it/33007/
+- student: Marco Rosa Gobbo
+  title: Design of a Coverage-driven Reinforcement Learning Framework for RISC-V Functional Verification
+  year: 2024
+  link: https://webthesis.biblio.polito.it/33024/
+- student: Maria Elena D'Agostino
+  title: 'LUNA: Learning-based Unified Network Allocation   AI-based NoC workload optimization'
+  year: 2024
+  link: https://webthesis.biblio.polito.it/30935/
+- student: Mario Porcaro
+  title: Exploring the impact of RCQ approach in an unrolled LDPC decoder
+  year: 2024
+  link: https://webthesis.biblio.polito.it/33994/
+- student: Mattia Castagno
+  title: 'From minutes to millennia:  enhancing power analysis resistance in AES and ASCON'
+  year: 2024
+  link: https://webthesis.biblio.polito.it/33815/
+- student: Nicolo' Carpentieri
+  title: Designing and Evaluating Mapping of CNN layers on an edge-CGRA
+  year: 2024
+  link: https://webthesis.biblio.polito.it/30827/
+- student: Pietro Fagnani
+  title: RTL UNR code analysis for verification closure applied to digital designs
+  year: 2024
+  link: https://webthesis.biblio.polito.it/30976/
+- student: Pietro Romeo
+  title: Design of an optimized FHOG architecture with Vivado HLS
+  year: 2024
+  link: https://webthesis.biblio.polito.it/31813/
+- student: Riccardo Cuccu
+  title: 'Unit Testing as a Foundation for Refactoring in Embedded Systems: A Case Study on Qualcomm Cloud AI 100'
+  year: 2024
+  link: https://webthesis.biblio.polito.it/33103/
+- student: Riccardo Giunti
+  title: Development of a Monitor IP in a Power Line Communication Modem
+  year: 2024
+  link: https://webthesis.biblio.polito.it/33106/
+- student: Roberto Capruzzi
+  title: Exploring Power Improvement Features of Advanced Physical Implementation Flow
+  year: 2024
+  link: https://webthesis.biblio.polito.it/33006/
+- student: Roman Ali
+  title: Develop a UVM Metric Driven Verification Environment for Mixed Signal Simulation
+  year: 2024
+  link: https://webthesis.biblio.polito.it/30933/
+- student: Simone Romeo
+  title: 'ARISE: Integration of an Approximate and Reconfigurable Spatial Array on a RISC-V-Based Platform'
+  year: 2024
+  link: https://webthesis.biblio.polito.it/33997/
+- student: Stefano Rizzello
+  title: Progettazione digitale di compressori approssimati 4:2 per interfacce seriali a 112Gps in tecnologia FinFET  = Digital design of 4:2 approximate compressors for 112Gps serial interfaces in FinFET technology
+  year: 2024
+  link: https://webthesis.biblio.polito.it/30982/
+- student: Taus Enrico
+  title: FPGA implementation of a frequency estimator for RADAR localization applications
+  year: 2024
+  link: https://webthesis.biblio.polito.it/33105/
+- student: Valeria Piscopo
+  title: Design of a true random number generator for post-quantum cryptography
+  year: 2024
+  link: https://webthesis.biblio.polito.it/31048/
+- student: Vincenzo Pio Elia
+  title: Progettazione di un Adattatore di collaudo automatico per test in potenza di applicazioni in ambito avionico = Design of an Automatic Test Adapter for power testing for avionic application
+  year: 2024
+  link: https://webthesis.biblio.polito.it/33940/
+- student: Alessandra Vignoli
+  title: 'WinoAdapt: End-to-End Winograd-based FPGA accelerator for Quantized Convolutional Neural Networks'
+  year: 2023
+  link: https://webthesis.biblio.polito.it/26730/
+- student: Alessandro Barrera
+  title: A Design Space Exploration Tool for LDPC Decoder Architectures in 5G NR Applications
+  year: 2023
+  link: https://webthesis.biblio.polito.it/26632/
+- student: Alessio Cicero
+  title: Power and Area Optimization of a Neural Network-Based Digital Pre-Distorter for RF Power Amplifiers
+  year: 2023
+  link: https://webthesis.biblio.polito.it/26635/
+- student: Andrea Amato
+  title: 'C-model based verification of a generic IP: an automatic UVM based approach for the functional verification of RTL designs through correspondence checking with a reference C??model'
+  year: 2023
+  link: https://webthesis.biblio.polito.it/28518/
+- student: Christian Vespo
+  title: VLSI architectures optimized for the computation of floating-point transcendental functions
+  year: 2023
+  link: https://webthesis.biblio.polito.it/28528/
+- student: Claudia Golino
+  title: Bus Network Integration for Enhanced SoC Performance and Power Consumption - Optimization of Tailored On-chip Interconnection for Low Power Digital System
+  year: 2023
+  link: https://webthesis.biblio.polito.it/28563/
+- student: Daniele Crimi
+  title: A Microprocessor with customizable Instruction set to improve performance and power consumption
+  year: 2023
+  link: https://webthesis.biblio.polito.it/29371/
+- student: Davide Guarini
+  title: 'Asynchronous State Machine : State of the Art, General Solution for Testing and Automation of Testing Environment Creation'
+  year: 2023
+  link: https://webthesis.biblio.polito.it/28564/
+- student: Davide Milone
+  title: Expansion board for digital out channels in HIL simulator controlled by CAN protocol
+  year: 2023
+  link: https://webthesis.biblio.polito.it/27777/
+- student: Eugenio Ressa
+  title: An Efficient Hardware Accelerator for Class Incremental Deep Neural Networks
+  year: 2023
+  link: https://webthesis.biblio.polito.it/29314/
+- student: Federica Bongo
+  title: UVM Environment for I3C Target Device
+  year: 2023
+  link: https://webthesis.biblio.polito.it/27775/
+- student: Federico De Sario
+  title: Sviluppo Software Per Dispositivi Medici Impiantabili Per Applicazioni Prostetiche = Software Development for Implantable Medical Devices for Prosthetic Applications
+  year: 2023
+  link: https://webthesis.biblio.polito.it/28522/
+- student: Flavia Guella
+  title: 'HERMIONE: a Co-design Methodology for Layer-wise Approximation of Neural Networks on RISC-V'
+  year: 2023
+  link: https://webthesis.biblio.polito.it/26864/
+- student: Francesco Dell'Atti
+  title: Integrated circuit Back-End of line analysis and modeling for future node pathfinding
+  year: 2023
+  link: https://webthesis.biblio.polito.it/28599/
+- student: Francesco Dilevrano
+  title: Serial bit accelerator with sparsity managment
+  year: 2023
+  link: https://webthesis.biblio.polito.it/28524/
+- student: Francesco Enrico Brambilla
+  title: Modeling and implementation studies of pixel readout architecture for on-chip processing in High Energy Physics applications
+  year: 2023
+  link: https://webthesis.biblio.polito.it/28593/
+- student: Francesco Gallareto
+  title: Design digitale di un Viterbi Detector in tecnologia FinFET a 3 nm = Digital design of a Viterbi Detector in 3 nm FinFET technology
+  year: 2023
+  link: https://webthesis.biblio.polito.it/26638/
+- student: Gaetano Maria Raia
+  title: Formal Verification Techniques to Check Functional Equivalence between High-Level C Models and RTL Implementations using Jasper C2RTL
+  year: 2023
+  link: https://webthesis.biblio.polito.it/27779/
+- student: Gioele Sineo
+  title: Binary Edward Elliptic Curve CryptoCore Accelerator
+  year: 2023
+  link: https://webthesis.biblio.polito.it/29376/
+- student: Giovanni Pollo
+  title: Resilience analysis of FPGA-based Dataflow accelerators
+  year: 2023
+  link: https://webthesis.biblio.polito.it/26868/
+- student: Lorenzo Ottino
+  title: Capacità di Verifica con Auto-Test per un Microcontrollore Integrato tramite UVM e Firmware = Self-Checking Verification Capability for an Integrated Microcontroller by UVM and Firmware
+  year: 2023
+  link: https://webthesis.biblio.polito.it/26727/
+- student: Luca Pulvirenti
+  title: Overcoming Limitations of Static Timing Analysis through Single-Path-Based Transistor Level Simulations in Multi-Power-Domain ASICs for MEMS Sensors
+  year: 2023
+  link: https://webthesis.biblio.polito.it/26729/
+- student: Marco Chiavello
+  title: Development of a Workflow for Power Analysis at RTL-level Design
+  year: 2023
+  link: https://webthesis.biblio.polito.it/29312/
+- student: Marcos Ricardo Lawrie
+  title: Design, analysis, and verification of a generic and optimum upsampler by 2 for a Wi-Fi 7 ASIC IP
+  year: 2023
+  link: https://webthesis.biblio.polito.it/26866/
+- student: Massimo Emiliano
+  title: Design of a Spatial Array with Run-Time Reconfigurable Approximate Processing Engines
+  year: 2023
+  link: https://webthesis.biblio.polito.it/29313/
+- student: Matteo Caravaggio
+  title: A new tool for the full digital flow
+  year: 2023
+  link: https://webthesis.biblio.polito.it/28561/
+- student: Mattia Mirigaldi
+  title: Integration and optimization of a RISC-V based Keccak accelerator
+  year: 2023
+  link: https://webthesis.biblio.polito.it/26725/
+- student: Michelangelo Miceli
+  title: A Coherence-Capable Write-Back L1 Data Cache for Ariane
+  year: 2023
+  link: https://webthesis.biblio.polito.it/26867/
+- student: Muhammad Afnan Aftab
+  title: Modeling for Mixed-Signal Simulations
+  year: 2023
+  link: https://webthesis.biblio.polito.it/29311/
+- student: Paolo Giordano
+  title: IR-Drop Aware Placement Refiner in Place and Route Design
+  year: 2023
+  link: https://webthesis.biblio.polito.it/26863/
+- student: Raffaele Virgilio
+  title: Testing and characterisation of DXPE201 Pin Electronics board
+  year: 2023
+  link: https://webthesis.biblio.polito.it/28568/
+- student: Roberta Fiandaca
+  title: Power and Area Optimization in Neural Receivers
+  year: 2023
+  link: https://webthesis.biblio.polito.it/26682/
+- student: Simone Valente
+  title: Generalized UVM testbench framework for verification of eFPGA devices
+  year: 2023
+  link: https://webthesis.biblio.polito.it/27123/
+- student: Stefano Moncalvo
+  title: 'Definition of a verification flow for High-Level Synthesis IPs:  Case study on functional coverage applied to High Level Synthesis blocks in a C++ and Universal Methodology environment'
+  year: 2023
+  link: https://webthesis.biblio.polito.it/27778/
+- student: Tiziano Carnevale
+  title: Miglioramento delle prestazioni dei moderni codificatori video con reti neurali = Improving modern video encoders performances with neural networks
+  year: 2023
+  link: https://webthesis.biblio.polito.it/26633/
+- student: Tommaso Ricci
+  title: Implementation of a RISC-V based microprocessor architecture for NFC communication
+  year: 2023
+  link: https://webthesis.biblio.polito.it/29375/

@@ -1,0 +1,45 @@
+---
+layout: default
+title: Thesis
+permalink: /thesis/
+description: Thesis proposals and thesis students of the EDGE Group.
+---
+
+<h2>Thesis proposals</h2>
+
+<p>Open Bachelor's/Master's thesis topics with the group.</p>
+
+<ul class="thesis-proposals">
+{% for p in site.data.thesis_proposals %}
+  <li class="proposal">
+    <span class="proposal-title">{{ p.title }}</span>
+    {% if p.advisor %}<span class="proposal-advisor">{{ p.advisor }}</span>{% endif %}
+    {% if p.description %}<p>{{ p.description }}</p>{% endif %}
+  </li>
+{% else %}
+  <li>Contact directly, guido.masera@polito.it, maurizio.martina@polito.it, alessandra.dolmeta@polito.it, luigi.giuffrida@polito.it</li>
+{% endfor %}
+</ul>
+
+<h2>Thesis students</h2>
+
+{% assign theses = site.data.theses | sort: "year" | reverse %}
+{% assign years = theses | group_by: "year" %}
+<div id="thesis-years">
+{% for year in years %}
+  <details class="pub-year"{% if forloop.first %} open{% endif %}>
+    <summary class="pub-year-summary">{{ year.name }} <span class="pub-count">({{ year.items | size }})</span></summary>
+    <ul class="thesis-list">
+    {% for t in year.items %}
+      <li class="thesis-entry">
+        <span class="thesis-student">{{ t.student }}</span>
+        <span class="thesis-title">{{ t.title }}</span>
+        {% if t.link %}<a class="thesis-link" href="{{ t.link }}" target="_blank" rel="noopener">Thesis ↗</a>{% endif %}
+      </li>
+    {% endfor %}
+    </ul>
+  </details>
+{% else %}
+  <p>Nothing published yet.</p>
+{% endfor %}
+</div>
