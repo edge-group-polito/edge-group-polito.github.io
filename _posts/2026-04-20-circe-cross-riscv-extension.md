@@ -4,7 +4,7 @@ title: "CIRCE CROSS Integrated RISC-V Cryptographic Extension"
 date: 2026-04-20
 authors: "Alessandra Dolmeta, Valeria Piscopo, Maurizio Martina, Guido Masera"
 citation: "2026 Design, Automation & Test in Europe Conference (DATE), pp. 1-3, 2026"
-paper_url: https://scholar.google.com/citations?view_op=view_citation&hl=it&user=8SRb1IsAAAAJ&citation_for_view=8SRb1IsAAAAJ:UebtZRa9Y70C
+paper_url: https://ieeexplore.ieee.org/document/11769920
 repo_url: https://github.com/edge-group-polito/CIRCE
 ---
 
