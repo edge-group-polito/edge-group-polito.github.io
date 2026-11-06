@@ -1,6 +1,14 @@
 # One entry per completed/ongoing thesis. `link` should point to the thesis PDF or its
 # institutional repository page (e.g. PoliTO's webthesis). Example:
-# - student: Dennis Romario Polenta Teran
+# - student: "Name Surname"
+#   title: "Thesis title"
+#   year: 2026
+#   link: https://webthesis.biblio.polito.it/...
+#
+# Populated from the group's PoliTO webthesis advisor pages (Guido Masera and Maurizio
+# Martina), 2023 onward, deduplicated on co-advised theses (same student appears under
+# both advisors).
+- student: Dennis Romario Polenta Teran
   title: 'FPGA Prototyping and Automated Characterization and Performance Tests of a RISC-V-based MPU for DSP on NFC Applications'
   year: 2026
 - student: Claudia Amina Padula
@@ -60,14 +68,6 @@
 - student: Stefano Loviselli
   title: 'Exploring opportunities in deploy Small-Language Models on an in-cache computing IP'
   year: 2026
-- student: "Name Surname"
-#   title: "Thesis title"
-#   year: 2026
-#   link: https://webthesis.biblio.polito.it/...
-#
-# Populated from the group's PoliTO webthesis advisor pages (Guido Masera and Maurizio
-# Martina), 2023 onward, deduplicated on co-advised theses (same student appears under
-# both advisors).
 - student: Damiano Rossetti
   title: 'Restauro digitale dei supporti analogici del patrimonio audiovisivo RAI: analisi critica dell''impiego dell''intelligenza artificiale nella ricostruzione di frame mancanti o estremamente corrotti = Digital restoration of analog media from RAI''s audiovisual heritage: critical analysis of the use of artificial intelligence in the reconstruction of missing or extremely corrupted frames'
   year: 2026
