@@ -40,7 +40,7 @@ permalink: /people/
 
 <ul class="people">
   <li class="person">
-    <img class="person-photo" src="/photo/people/omino.png" alt="Flavia Guella">
+    <img class="person-photo" src="/photo/people/flavia.jpeg" alt="Flavia Guella">
     <span class="person-name">Flavia Guella</span>
     <a class="person-link" href="https://www.linkedin.com/in/flavia-guella-1512242bb/?locale=en" target="_blank" rel="noopener"><img src="/assets/img/linkedin.png" alt="" class="linkedin-icon"> LinkedIn ↗</a>
   </li>
@@ -50,7 +50,7 @@ permalink: /people/
     <a class="person-link" href="https://www.linkedin.com/in/vincenzo-petrolo-160369175/" target="_blank" rel="noopener"><img src="/assets/img/linkedin.png" alt="" class="linkedin-icon"> LinkedIn ↗</a>
   </li>
   <li class="person">
-    <img class="person-photo" src="/photo/people/omino.png" alt="Mattia Mirigaldi">
+    <img class="person-photo" src="/photo/people/mattia.jpeg" alt="Mattia Mirigaldi">
     <span class="person-name">Mattia Mirigaldi</span>
     <a class="person-link" href="https://www.linkedin.com/in/mattia-mirigaldi-8109b9201/" target="_blank" rel="noopener"><img src="/assets/img/linkedin.png" alt="" class="linkedin-icon"> LinkedIn ↗</a>
   </li>
@@ -60,7 +60,7 @@ permalink: /people/
     <a class="person-link" href="https://www.linkedin.com/in/valeria-piscopo-4aa88b256/" target="_blank" rel="noopener"><img src="/assets/img/linkedin.png" alt="" class="linkedin-icon"> LinkedIn ↗</a>
   </li>
   <li class="person">
-    <img class="person-photo" src="/photo/people/omino.png" alt="Enrico Manfredi">
+    <img class="person-photo" src="/photo/people/enrico.jpeg" alt="Enrico Manfredi">
     <span class="person-name">Enrico Manfredi</span>
     <a class="person-link" href="https://www.linkedin.com/in/enrico-manfredi-662a10357/" target="_blank" rel="noopener"><img src="/assets/img/linkedin.png" alt="" class="linkedin-icon"> LinkedIn ↗</a>
   </li>
@@ -68,5 +68,25 @@ permalink: /people/
     <img class="person-photo" src="/photo/people/barrera_foto.jpg" alt="Alessandro Barrera">
     <span class="person-name">Alessandro Barrera</span>
     <a class="person-link" href="https://www.linkedin.com/in/alessandro-barrera-584478275/" target="_blank" rel="noopener"><img src="/assets/img/linkedin.png" alt="" class="linkedin-icon"> LinkedIn ↗</a>
+  </li>
+  <li class="person">
+    <img class="person-photo" src="/photo/people/sabina.jpeg" alt="Sabina Sarcuni">
+    <span class="person-name">Sabina Sarcuni</span>
+    <a class="person-link" href="https://www.linkedin.com/in/sabina-sarcuni/?skipRedirect=true&amp;contentTrackingId=JneDr%2FzWRuWE3ULnKoaG7g%3D%3D&amp;viewName=premium-nav-upsell-text&amp;upsellOrderOrigin=Tracking%3Av1%3Apremium_nav_upsell_text%3ANav%3AIn-Product" target="_blank" rel="noopener"><img src="/assets/img/linkedin.png" alt="" class="linkedin-icon"> LinkedIn ↗</a>
+  </li>
+</ul>
+
+## Assegnisti
+
+<ul class="people">
+  <li class="person">
+    <img class="person-photo" src="/photo/people/federico.jpeg" alt="Federico Runco">
+    <span class="person-name">Federico Runco</span>
+    <span class="person-role">Assegnista di ricerca</span>
+  </li>
+  <li class="person">
+    <img class="person-photo" src="/photo/people/gabriele.jpeg" alt="Gabriele De Benedetto">
+    <span class="person-name">Gabriele De Benedetto</span>
+    <span class="person-role">Assegnista di ricerca</span>
   </li>
 </ul>
