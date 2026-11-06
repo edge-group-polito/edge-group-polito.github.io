@@ -1,6 +1,66 @@
 # One entry per completed/ongoing thesis. `link` should point to the thesis PDF or its
 # institutional repository page (e.g. PoliTO's webthesis). Example:
-# - student: "Name Surname"
+# - student: Dennis Romario Polenta Teran
+  title: 'FPGA Prototyping and Automated Characterization and Performance Tests of a RISC-V-based MPU for DSP on NFC Applications'
+  year: 2026
+- student: Claudia Amina Padula
+  title: 'IR-Drop-Aware Timing Optimization in IC Digital Backend Design via Mitigation of Power-Integrity Aggressors'
+  year: 2026
+- student: Patricia Khalil
+  title: 'Side-Channel Analysis of ASCON Using Deep Learning'
+  year: 2026
+- student: Simone Delpesce
+  title: 'Slack Redistribution for Leakage Optimization Through Controlled Clock Skewing in Advanced Technology Nodes'
+  year: 2026
+- student: Riccardo Maria Galiano
+  title: 'Vector Acceleration of SEAL-Embedded Fully Homomorphic Encryption on RISC-V Embedded Systems'
+  year: 2026
+- student: Leonardo Cucco
+  title: 'Analysis and Power Optimization of a RISC-V based Fuel Gauge'
+  year: 2026
+- student: Battista Bettoni
+  title: 'Application of V-Cycle to the development of a next-gen BJB board for sustainable mobility'
+  year: 2026
+- student: Mariagiusy Baldassarra
+  title: 'Automated ATPG Run Monitoring, Debug and Analytics Tools for Large-Scale ATPG Runs for Complex Designs'
+  year: 2026
+- student: Francesco Ventafridda
+  title: 'Design and Implementation of a UVM Testbench for Pre-Silicon Verification of a GPU Texture Processor Backend Pipeline'
+  year: 2026
+- student: Alessandro Barocci
+  title: 'Design and Implementation of an AXI Memory-Mapped Flash Controller for the X-ALP RISC-V SoC Platform'
+  year: 2026
+- student: Gianmarco Fortunelli
+  title: 'Design of a configurable multi-datatype arithmetic unit for ML workloads'
+  year: 2026
+- student: Gabriele De Benedetto
+  title: 'Design of an agile cryptographic accelerator for space communications'
+  year: 2026
+- student: Stefano Crescenza
+  title: 'Exploration of FPGA-Based Ising Machine Architectures'
+  year: 2026
+- student: Gabriele Tripi
+  title: 'RISC-V Core Architecture Optimization and ISA Extension for Low Power Consumer Applications'
+  year: 2026
+- student: Francesco Pasquale De Ceglia
+  title: 'Power-Efficiency Optimizations for RISC-V Based UAV Controllers Implementation and Evaluation on the NEORV32 Core'
+  year: 2026
+- student: Giuliana Anna Belluso
+  title: 'Adoption of a New RTL-Based DFT Flow Enabled by Synopsys Unified TestMAX Platform'
+  year: 2026
+- student: Francesco Palermo
+  title: 'Design Study and Verification of a Flash Memory Controller for Automotive STM32 Microcontrollers: Architectural Analysis, Co-Simulation with ARM Core and Python-Based Automated Test Stimuli Generation'
+  year: 2026
+- student: Enzo Denis Ferro
+  title: 'Design and Simulation of a Multi-Instance CAN XL Controller for STM32 Microcontrollers'
+  year: 2026
+- student: Angelo Carlone
+  title: 'Enhanced synaptic connectivity of spiking neural multiprocessor'
+  year: 2026
+- student: Stefano Loviselli
+  title: 'Exploring opportunities in deploy Small-Language Models on an in-cache computing IP'
+  year: 2026
+- student: "Name Surname"
 #   title: "Thesis title"
 #   year: 2026
 #   link: https://webthesis.biblio.polito.it/...

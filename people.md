@@ -83,10 +83,12 @@ permalink: /people/
     <img class="person-photo" src="/photo/people/federico.jpeg" alt="Federico Runco">
     <span class="person-name">Federico Runco</span>
     <span class="person-role">Assegnista di ricerca</span>
+    <a class="person-link" href="https://www.linkedin.com/in/federunco/" target="_blank" rel="noopener"><img src="/assets/img/linkedin.png" alt="" class="linkedin-icon"> LinkedIn ↗</a>
   </li>
   <li class="person">
     <img class="person-photo" src="/photo/people/gabriele.jpeg" alt="Gabriele De Benedetto">
     <span class="person-name">Gabriele De Benedetto</span>
     <span class="person-role">Assegnista di ricerca</span>
+    <a class="person-link" href="https://www.linkedin.com/in/gabriele-de-benedetto-006868319/" target="_blank" rel="noopener"><img src="/assets/img/linkedin.png" alt="" class="linkedin-icon"> LinkedIn ↗</a>
   </li>
 </ul>
